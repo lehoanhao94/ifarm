@@ -7,7 +7,7 @@ using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace HelloToolbar
 {
-	[Activity (Label = "Main", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity (Label = "Main", MainLauncher = false, Icon = "@drawable/icon")]
 	public class MainActivity : AppCompatActivity
 	{
 
