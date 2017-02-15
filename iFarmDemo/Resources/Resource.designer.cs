@@ -2113,73 +2113,79 @@ namespace HelloToolbar
 			public const int abc_vector_test = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int ic_action_content_create = 2130837587;
+			public const int cayCN = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int ic_action_content_redo = 2130837588;
+			public const int cayNN = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int ic_action_content_save = 2130837589;
+			public const int ic_action_content_create = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int ic_action_content_undo = 2130837590;
+			public const int ic_action_content_redo = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int ic_action_social_share = 2130837591;
+			public const int ic_action_content_save = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int icon = 2130837592;
+			public const int ic_action_content_undo = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int monkey = 2130837593;
+			public const int ic_action_social_share = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int moon = 2130837594;
+			public const int icon = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int notification_action_background = 2130837595;
+			public const int monkey = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int notification_bg = 2130837596;
+			public const int moon = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int notification_bg_low = 2130837597;
+			public const int notification_action_background = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int notification_bg_low_normal = 2130837598;
+			public const int notification_bg = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int notification_bg_low_pressed = 2130837599;
+			public const int notification_bg_low = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int notification_bg_normal = 2130837600;
+			public const int notification_bg_low_normal = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int notification_bg_normal_pressed = 2130837601;
+			public const int notification_bg_low_pressed = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int notification_icon_background = 2130837602;
-			
-			// aapt resource value: 0x7f020068
-			public const int notification_template_icon_bg = 2130837608;
-			
-			// aapt resource value: 0x7f020069
-			public const int notification_template_icon_low_bg = 2130837609;
+			public const int notification_bg_normal = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int notification_tile_bg = 2130837603;
+			public const int notification_bg_normal_pressed = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int notify_panel_notification_icon_bg = 2130837604;
+			public const int notification_icon_background = 2130837604;
+			
+			// aapt resource value: 0x7f02006a
+			public const int notification_template_icon_bg = 2130837610;
+			
+			// aapt resource value: 0x7f02006b
+			public const int notification_template_icon_low_bg = 2130837611;
 			
 			// aapt resource value: 0x7f020065
-			public const int splash = 2130837605;
+			public const int notification_tile_bg = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int splash_screen = 2130837606;
+			public const int notify_panel_notification_icon_bg = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int tree = 2130837607;
+			public const int splash = 2130837607;
+			
+			// aapt resource value: 0x7f020068
+			public const int splash_screen = 2130837608;
+			
+			// aapt resource value: 0x7f020069
+			public const int tree = 2130837609;
 			
 			static Drawable()
 			{
@@ -2194,8 +2200,8 @@ namespace HelloToolbar
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0a0061
-			public const int action0 = 2131361889;
+			// aapt resource value: 0x7f0a005e
+			public const int action0 = 2131361886;
 			
 			// aapt resource value: 0x7f0a0048
 			public const int action_bar = 2131361864;
@@ -2218,17 +2224,17 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a0025
 			public const int action_bar_title = 2131361829;
 			
-			// aapt resource value: 0x7f0a005e
-			public const int action_container = 2131361886;
+			// aapt resource value: 0x7f0a005b
+			public const int action_container = 2131361883;
 			
 			// aapt resource value: 0x7f0a0049
 			public const int action_context_bar = 2131361865;
 			
-			// aapt resource value: 0x7f0a0065
-			public const int action_divider = 2131361893;
+			// aapt resource value: 0x7f0a0062
+			public const int action_divider = 2131361890;
 			
-			// aapt resource value: 0x7f0a005f
-			public const int action_image = 2131361887;
+			// aapt resource value: 0x7f0a005c
+			public const int action_image = 2131361884;
 			
 			// aapt resource value: 0x7f0a0002
 			public const int action_menu_divider = 2131361794;
@@ -2245,11 +2251,11 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a0027
 			public const int action_mode_close_button = 2131361831;
 			
-			// aapt resource value: 0x7f0a0060
-			public const int action_text = 2131361888;
+			// aapt resource value: 0x7f0a005d
+			public const int action_text = 2131361885;
 			
-			// aapt resource value: 0x7f0a006e
-			public const int actions = 2131361902;
+			// aapt resource value: 0x7f0a006b
+			public const int actions = 2131361899;
 			
 			// aapt resource value: 0x7f0a0028
 			public const int activity_chooser_view_content = 2131361832;
@@ -2272,17 +2278,14 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a002f
 			public const int buttonPanel = 2131361839;
 			
-			// aapt resource value: 0x7f0a0062
-			public const int cancel_action = 2131361890;
-			
-			// aapt resource value: 0x7f0a005c
-			public const int caycongnghiep = 2131361884;
+			// aapt resource value: 0x7f0a005f
+			public const int cancel_action = 2131361887;
 			
 			// aapt resource value: 0x7f0a003f
 			public const int checkbox = 2131361855;
 			
-			// aapt resource value: 0x7f0a006a
-			public const int chronometer = 2131361898;
+			// aapt resource value: 0x7f0a0067
+			public const int chronometer = 2131361895;
 			
 			// aapt resource value: 0x7f0a001f
 			public const int collapseActionView = 2131361823;
@@ -2311,8 +2314,8 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a001c
 			public const int end = 2131361820;
 			
-			// aapt resource value: 0x7f0a0074
-			public const int end_padder = 2131361908;
+			// aapt resource value: 0x7f0a0071
+			public const int end_padder = 2131361905;
 			
 			// aapt resource value: 0x7f0a0029
 			public const int expand_activities_button = 2131361833;
@@ -2329,8 +2332,8 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a002d
 			public const int icon = 2131361837;
 			
-			// aapt resource value: 0x7f0a006f
-			public const int icon_group = 2131361903;
+			// aapt resource value: 0x7f0a006c
+			public const int icon_group = 2131361900;
 			
 			// aapt resource value: 0x7f0a0020
 			public const int ifRoom = 2131361824;
@@ -2338,20 +2341,17 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a002a
 			public const int image = 2131361834;
 			
-			// aapt resource value: 0x7f0a005a
-			public const int imageView = 2131361882;
-			
-			// aapt resource value: 0x7f0a006b
-			public const int info = 2131361899;
+			// aapt resource value: 0x7f0a0068
+			public const int info = 2131361896;
 			
 			// aapt resource value: 0x7f0a0009
 			public const int item_touch_helper_previous_elevation = 2131361801;
 			
-			// aapt resource value: 0x7f0a0070
-			public const int line1 = 2131361904;
+			// aapt resource value: 0x7f0a006d
+			public const int line1 = 2131361901;
 			
-			// aapt resource value: 0x7f0a0072
-			public const int line3 = 2131361906;
+			// aapt resource value: 0x7f0a006f
+			public const int line3 = 2131361903;
 			
 			// aapt resource value: 0x7f0a000a
 			public const int listMode = 2131361802;
@@ -2362,14 +2362,14 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a0058
 			public const int main_content = 2131361880;
 			
-			// aapt resource value: 0x7f0a0064
-			public const int media_actions = 2131361892;
+			// aapt resource value: 0x7f0a0061
+			public const int media_actions = 2131361889;
 			
-			// aapt resource value: 0x7f0a0077
-			public const int menu_settings = 2131361911;
+			// aapt resource value: 0x7f0a0074
+			public const int menu_settings = 2131361908;
 			
-			// aapt resource value: 0x7f0a0076
-			public const int menu_share = 2131361910;
+			// aapt resource value: 0x7f0a0073
+			public const int menu_share = 2131361907;
 			
 			// aapt resource value: 0x7f0a001d
 			public const int middle = 2131361821;
@@ -2386,14 +2386,14 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a000b
 			public const int normal = 2131361803;
 			
-			// aapt resource value: 0x7f0a006d
-			public const int notification_background = 2131361901;
+			// aapt resource value: 0x7f0a006a
+			public const int notification_background = 2131361898;
 			
-			// aapt resource value: 0x7f0a0067
-			public const int notification_main_column = 2131361895;
+			// aapt resource value: 0x7f0a0064
+			public const int notification_main_column = 2131361892;
 			
-			// aapt resource value: 0x7f0a0066
-			public const int notification_main_column_container = 2131361894;
+			// aapt resource value: 0x7f0a0063
+			public const int notification_main_column_container = 2131361891;
 			
 			// aapt resource value: 0x7f0a0031
 			public const int parentPanel = 2131361841;
@@ -2407,14 +2407,11 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a0041
 			public const int radio = 2131361857;
 			
-			// aapt resource value: 0x7f0a006c
-			public const int right_icon = 2131361900;
+			// aapt resource value: 0x7f0a0069
+			public const int right_icon = 2131361897;
 			
-			// aapt resource value: 0x7f0a0068
-			public const int right_side = 2131361896;
-			
-			// aapt resource value: 0x7f0a0059
-			public const int rvCategory = 2131361881;
+			// aapt resource value: 0x7f0a0065
+			public const int right_side = 2131361893;
 			
 			// aapt resource value: 0x7f0a0016
 			public const int screen = 2131361814;
@@ -2488,8 +2485,8 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a0019
 			public const int src_over = 2131361817;
 			
-			// aapt resource value: 0x7f0a0063
-			public const int status_bar_latest_event_content = 2131361891;
+			// aapt resource value: 0x7f0a0060
+			public const int status_bar_latest_event_content = 2131361888;
 			
 			// aapt resource value: 0x7f0a0042
 			public const int submenuarrow = 2131361858;
@@ -2500,11 +2497,11 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a000c
 			public const int tabMode = 2131361804;
 			
-			// aapt resource value: 0x7f0a0073
-			public const int text = 2131361907;
+			// aapt resource value: 0x7f0a0070
+			public const int text = 2131361904;
 			
-			// aapt resource value: 0x7f0a0071
-			public const int text2 = 2131361905;
+			// aapt resource value: 0x7f0a006e
+			public const int text2 = 2131361902;
 			
 			// aapt resource value: 0x7f0a0036
 			public const int textSpacerNoButtons = 2131361846;
@@ -2512,11 +2509,8 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a0035
 			public const int textSpacerNoTitle = 2131361845;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int textView = 2131361883;
-			
-			// aapt resource value: 0x7f0a0069
-			public const int time = 2131361897;
+			// aapt resource value: 0x7f0a0066
+			public const int time = 2131361894;
 			
 			// aapt resource value: 0x7f0a002e
 			public const int title = 2131361838;
@@ -2530,8 +2524,11 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a0057
 			public const int toolbar = 2131361879;
 			
-			// aapt resource value: 0x7f0a005d
-			public const int toolbar_bottom = 2131361885;
+			// aapt resource value: 0x7f0a005a
+			public const int toolbar_bottom = 2131361882;
+			
+			// aapt resource value: 0x7f0a0059
+			public const int toolbar_top = 2131361881;
 			
 			// aapt resource value: 0x7f0a0024
 			public const int top = 2131361828;
@@ -2545,8 +2542,8 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f0a0013
 			public const int useLogo = 2131361811;
 			
-			// aapt resource value: 0x7f0a0075
-			public const int webview = 2131361909;
+			// aapt resource value: 0x7f0a0072
+			public const int webview = 2131361906;
 			
 			// aapt resource value: 0x7f0a0022
 			public const int withText = 2131361826;
@@ -2674,79 +2671,73 @@ namespace HelloToolbar
 			public const int abc_select_dialog_material = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int activity_Category = 2130903067;
+			public const int detail = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int detail = 2130903068;
+			public const int main = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int item_Category = 2130903069;
+			public const int notification_action = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int main = 2130903070;
+			public const int notification_action_tombstone = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int notification_action = 2130903071;
+			public const int notification_media_action = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int notification_action_tombstone = 2130903072;
+			public const int notification_media_cancel_action = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int notification_media_action = 2130903073;
+			public const int notification_template_big_media = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int notification_media_cancel_action = 2130903074;
+			public const int notification_template_big_media_custom = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int notification_template_big_media = 2130903075;
+			public const int notification_template_big_media_narrow = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int notification_template_big_media_custom = 2130903076;
+			public const int notification_template_big_media_narrow_custom = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int notification_template_big_media_narrow = 2130903077;
+			public const int notification_template_custom_big = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int notification_template_big_media_narrow_custom = 2130903078;
+			public const int notification_template_icon_group = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int notification_template_custom_big = 2130903079;
+			public const int notification_template_lines_media = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int notification_template_icon_group = 2130903080;
+			public const int notification_template_media = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int notification_template_lines_media = 2130903081;
+			public const int notification_template_media_custom = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int notification_template_media = 2130903082;
+			public const int notification_template_part_chronometer = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int notification_template_media_custom = 2130903083;
+			public const int notification_template_part_time = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int notification_template_part_chronometer = 2130903084;
+			public const int select_dialog_item_material = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int notification_template_part_time = 2130903085;
+			public const int select_dialog_multichoice_material = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int select_dialog_item_material = 2130903086;
+			public const int select_dialog_singlechoice_material = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int select_dialog_multichoice_material = 2130903087;
+			public const int support_simple_spinner_dropdown_item = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int select_dialog_singlechoice_material = 2130903088;
+			public const int toolbar = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int support_simple_spinner_dropdown_item = 2130903089;
-			
-			// aapt resource value: 0x7f030032
-			public const int toolbar = 2130903090;
-			
-			// aapt resource value: 0x7f030033
-			public const int web = 2130903091;
+			public const int web = 2130903089;
 			
 			static Layout()
 			{
