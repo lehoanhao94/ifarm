@@ -41,9 +41,6 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Cheeseknife">
-      <HintPath>..\Components\cheeseknife-1.0\lib\android\Cheeseknife.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -95,7 +92,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Sources\BaseActivity.cs" />
-    <Compile Include="Sources\CategoryActivity.cs" />
     <Compile Include="Sources\MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,12 +104,6 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="packages.config" />
     <AndroidResource Include="Resources\layout\web.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\activity_Category.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\item_Category.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -146,7 +136,9 @@
     <AndroidResource Include="Resources\drawable\moon.jpg" />
     <AndroidResource Include="Resources\values-v21\styles.xml" />
     <AndroidResource Include="Resources\values\strings.xml" />
-    <AndroidResource Include="Resources\layout\main.axml" />
+    <AndroidResource Include="Resources\layout\main.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\layout\detail.axml" />
   </ItemGroup>
   <ItemGroup>
@@ -162,16 +154,10 @@
     <AndroidResource Include="Resources\drawable\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <XamarinComponentReference Include="cheeseknife">
-      <Visible>False</Visible>
-      <Version>1.0</Version>
-    </XamarinComponentReference>
+    <AndroidResource Include="Resources\drawable\cayCN.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\iFarm\iFarm.csproj">
-      <Project>{0988aee5-2a45-47a7-a701-05097bf84f57}</Project>
-      <Name>iFarm</Name>
-    </ProjectReference>
+    <AndroidResource Include="Resources\drawable\cayNN.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\tree.png" />
