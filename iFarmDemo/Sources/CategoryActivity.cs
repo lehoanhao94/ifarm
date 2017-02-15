@@ -14,7 +14,7 @@ using Com.Lilarcor.Cheeseknife;
 using iFarm.Entities;
 using Android.Widget;
 
-namespace HelloToolbar.Sources
+namespace HelloToolbar
 {
     [Activity(Label = "CategoryActivity")]
     public class CategoryActivity : AppCompatActivity
@@ -22,7 +22,7 @@ namespace HelloToolbar.Sources
         #region VARIABLES
 
         [InjectView(Resource.Id.toolbar)]
-        Toolbar toolbar;
+        Android.Support.V7.Widget.Toolbar toolbar;
 
         [InjectView(Resource.Id.rvCategory)]
         RecyclerView rvCategoryList;
@@ -48,11 +48,13 @@ namespace HelloToolbar.Sources
 
             prepareDemoData();
 
+            mLayoutManager = new LinearLayoutManager(this);
+            rvCategoryList.SetLayoutManager(mLayoutManager);
+
             mCategoryAdapter = new CategoryAdapter(mLstCategory);
             rvCategoryList.SetAdapter(mCategoryAdapter);
 
-            mLayoutManager = new LinearLayoutManager(this);
-            rvCategoryList.SetLayoutManager(mLayoutManager);
+
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
@@ -124,14 +126,18 @@ namespace HelloToolbar.Sources
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
-            
+            CategoryItemViewHolder vh = holder as CategoryItemViewHolder;
+
+            // Load the photo image resource from the photo album:
+            vh.Image.SetImageResource(Resource.Drawable.tree);
+            vh.Caption.Text = mLstCategory[position].Name;
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             // Inflate the CardView for the photo:
             View itemView = LayoutInflater.From(parent.Context).
-                        Inflate(Resource.Layout.PhotoCardView, parent, false);
+                        Inflate(Resource.Layout.item_Category, parent, false);
 
             // Create a ViewHolder to hold view references inside the CardView:
             CategoryItemViewHolder vh = new CategoryItemViewHolder(itemView);

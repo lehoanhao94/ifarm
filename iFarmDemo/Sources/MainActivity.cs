@@ -35,7 +35,7 @@ namespace HelloToolbar
 			};
 
 			FindViewById<ImageView>(Resource.Id.image).Click += (sender, e) => {
-				StartActivity(typeof(DetailActivity));
+				StartActivity(typeof(CategoryActivity));
 			};
 		}
 

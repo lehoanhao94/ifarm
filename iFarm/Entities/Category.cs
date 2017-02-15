@@ -8,15 +8,15 @@ namespace iFarm.Entities
 {
     public class Category
     {
-        private int Id { get; set; }
+        public int Id { get; set; }
 
-        private string UrlImage { get; set; }
+        public string UrlImage { get; set; }
 
-        private string Name { get; set; }
+        public string Name { get; set; }
 
-        private int Count { get { return LstDiseases.Count; } }
+        public int Count { get { return LstDiseases.Count; } }
 
-        private List<Disease> LstDiseases { get; set; }
+        public List<Disease> LstDiseases { get; set; }
     
         public Category(int id, string name, string urlImage, List<Disease> lstDiseases)
         {
