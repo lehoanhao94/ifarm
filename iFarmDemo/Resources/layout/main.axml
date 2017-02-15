@@ -28,7 +28,7 @@
           cardview:contentPadding="5dp">
         <LinearLayout
           android:layout_width="fill_parent"
-          android:layout_height="420dp"
+          android:layout_height="wrap_content"
           android:orientation="vertical"
           android:padding="8dp">
           <ImageView
@@ -59,7 +59,7 @@
           cardview:contentPadding="5dp">
         <LinearLayout
           android:layout_width="fill_parent"
-          android:layout_height="420dp"
+          android:layout_height="wrap_content"
           android:orientation="vertical"
           android:padding="8dp">
           <ImageView
