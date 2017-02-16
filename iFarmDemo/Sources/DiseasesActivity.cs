@@ -16,8 +16,8 @@ using Android.Widget;
 
 namespace HelloToolbar
 {
-    [Activity(Label = "CategoryActivity")]
-    public class CategoryActivity : AppCompatActivity
+    [Activity(Label = "DiseasesActivity")]
+    public class DiseasesActivity : AppCompatActivity
     {
         #region VARIABLES
 
@@ -25,11 +25,13 @@ namespace HelloToolbar
         Android.Support.V7.Widget.Toolbar toolbar;
 
         [InjectView(Resource.Id.rvCategory)]
-        RecyclerView rvCategoryList;
+        RecyclerView rvDiseaseList;
 
         RecyclerView.LayoutManager mLayoutManager;
-        CategoryAdapter mCategoryAdapter;
-        List<Category> mLstCategory;
+        DiseasesAdapter mDiseasesAdapter;
+        List<Disease> mLstDiseases;
+        private int mCategoryID;
+
         #endregion
 
         #region CONSTRUCTORS
@@ -41,27 +43,27 @@ namespace HelloToolbar
         {
             base.OnCreate(savedInstanceState);
 
+            mCategoryID = Intent.GetIntExtra("CategoryID", 0);
+
             SetContentView(Resource.Layout.activity_Category);
             Cheeseknife.Inject(this);
 
             setupToolbar();
 
-            prepareDemoData();
+            mLstDiseases = new List<Disease>();
+            for(int i = 0; i < 50; i ++)
+            {
+                mLstDiseases.Add(new Disease(i, "Sâu bệnh " + i));
+            }
 
             mLayoutManager = new LinearLayoutManager(this);
-            rvCategoryList.SetLayoutManager(mLayoutManager);
+            rvDiseaseList.SetLayoutManager(mLayoutManager);
 
-            mCategoryAdapter = new CategoryAdapter(mLstCategory);
-            mCategoryAdapter.ItemClick += OnItemClick;
-            rvCategoryList.SetAdapter(mCategoryAdapter);
+            mDiseasesAdapter = new DiseasesAdapter(mLstDiseases);
+            mDiseasesAdapter.ItemClick += OnItemClick;
+            rvDiseaseList.SetAdapter(mDiseasesAdapter);
 
 
-        }
-
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.home, menu);
-            return base.OnCreateOptionsMenu(menu);
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
@@ -72,6 +74,12 @@ namespace HelloToolbar
             return base.OnOptionsItemSelected(item);
         }
 
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.home, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
+
         #endregion
 
         #region EVENTS
@@ -79,40 +87,18 @@ namespace HelloToolbar
         void OnItemClick(object sender, int position)
         {
             int photoNum = position + 1;
-            var activity = new Intent(this, typeof(DiseasesActivity));
-            activity.PutExtra("CategoryID", mLstCategory[position].Id);
-            StartActivity(activity);
+            Toast.MakeText(this, "This is photo number " + photoNum, ToastLength.Short).Show();
         }
 
         #endregion
 
         #region OTHERS
 
-        private void prepareDemoData()
-        {
-            mLstCategory = new List<Category>();
-
-            List<Disease> _lstDisease = new List<Disease>();
-            _lstDisease.Add(new Disease(1, "Thối gốc 1"));
-            _lstDisease.Add(new Disease(2, "Thối gốc 2"));        
-            _lstDisease.Add(new Disease(3, "Thối gốc 3"));
-            _lstDisease.Add(new Disease(4, "Thối gốc 4"));
-            _lstDisease.Add(new Disease(5, "Thối gốc 5"));
-            _lstDisease.Add(new Disease(6, "Thối gốc 6"));
-            _lstDisease.Add(new Disease(7, "Thối gốc 7"));
-          
-            for(int i = 0; i < 100; i ++)
-            {
-                mLstCategory.Add(new Category(i, "Cây cao su " + i, "http://www.caosubinhduong.com.vn/images/news/cao-su-nuoc.jpg", _lstDisease));
-            }
-                    
-        }
-
         private void setupToolbar()
         {
             SetSupportActionBar(toolbar);
 
-            SupportActionBar.Title = "Cây công nghiệp";
+            SupportActionBar.Title = "Cây cao su " + mCategoryID;
 
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             SupportActionBar.SetHomeButtonEnabled(true);
@@ -121,21 +107,21 @@ namespace HelloToolbar
         #endregion
     }
 
-    public class CategoryAdapter : RecyclerView.Adapter
+    public class DiseasesAdapter : RecyclerView.Adapter
     {
-        public List<Category> mLstCategory;
+        public List<Disease> mLstDiseases;
         public event EventHandler<int> ItemClick;
 
-        public CategoryAdapter(List<Category> lstCategory)
+        public DiseasesAdapter(List<Disease> lstDiseases)
         {
-            mLstCategory = lstCategory;
+            mLstDiseases = lstDiseases;
         }
 
         public override int ItemCount
         {
             get
             {
-                return mLstCategory.Count;
+                return mLstDiseases.Count;
             }
         }
         void OnClick(int position)
@@ -148,11 +134,11 @@ namespace HelloToolbar
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
-            CategoryItemViewHolder vh = holder as CategoryItemViewHolder;
+            DiseaseItemViewHolder vh = holder as DiseaseItemViewHolder;
 
             // Load the photo image resource from the photo album:
-            vh.Image.SetImageResource(Resource.Drawable.tree);
-            vh.Caption.Text = mLstCategory[position].Name;
+            vh.Image.SetImageResource(Resource.Drawable.disease);
+            vh.Caption.Text = mLstDiseases[position].Name;
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
@@ -162,17 +148,17 @@ namespace HelloToolbar
                         Inflate(Resource.Layout.item_Category, parent, false);
 
             // Create a ViewHolder to hold view references inside the CardView:
-            CategoryItemViewHolder vh = new CategoryItemViewHolder(itemView, OnClick);
+            DiseaseItemViewHolder vh = new DiseaseItemViewHolder(itemView, OnClick);
             return vh;
         }
     }
 
-    public class CategoryItemViewHolder : RecyclerView.ViewHolder
+    public class DiseaseItemViewHolder : RecyclerView.ViewHolder
     {
         public ImageView Image { get; private set; }
         public TextView Caption { get; private set; }
 
-        public CategoryItemViewHolder(View itemView, Action<int> listener) : base(itemView)
+        public DiseaseItemViewHolder(View itemView, Action<int> listener) : base(itemView)
         {
             // Locate and cache view references:
             Image = itemView.FindViewById<ImageView>(Resource.Id.imageView);
