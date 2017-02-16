@@ -2904,38 +2904,38 @@ namespace HelloToolbar
 		public partial class Style
 		{
 			
+			// aapt resource value: 0x7f05009f
+			public const int AlertDialog_AppCompat = 2131034271;
+			
+			// aapt resource value: 0x7f0500a0
+			public const int AlertDialog_AppCompat_Light = 2131034272;
+			
 			// aapt resource value: 0x7f0500a1
-			public const int AlertDialog_AppCompat = 2131034273;
+			public const int Animation_AppCompat_Dialog = 2131034273;
 			
 			// aapt resource value: 0x7f0500a2
-			public const int AlertDialog_AppCompat_Light = 2131034274;
+			public const int Animation_AppCompat_DropDownUp = 2131034274;
 			
 			// aapt resource value: 0x7f0500a3
-			public const int Animation_AppCompat_Dialog = 2131034275;
+			public const int Base_AlertDialog_AppCompat = 2131034275;
 			
 			// aapt resource value: 0x7f0500a4
-			public const int Animation_AppCompat_DropDownUp = 2131034276;
+			public const int Base_AlertDialog_AppCompat_Light = 2131034276;
 			
 			// aapt resource value: 0x7f0500a5
-			public const int Base_AlertDialog_AppCompat = 2131034277;
+			public const int Base_Animation_AppCompat_Dialog = 2131034277;
 			
 			// aapt resource value: 0x7f0500a6
-			public const int Base_AlertDialog_AppCompat_Light = 2131034278;
-			
-			// aapt resource value: 0x7f0500a7
-			public const int Base_Animation_AppCompat_Dialog = 2131034279;
-			
-			// aapt resource value: 0x7f0500a8
-			public const int Base_Animation_AppCompat_DropDownUp = 2131034280;
+			public const int Base_Animation_AppCompat_DropDownUp = 2131034278;
 			
 			// aapt resource value: 0x7f050001
 			public const int Base_CardView = 2131034113;
 			
-			// aapt resource value: 0x7f0500a9
-			public const int Base_DialogWindowTitle_AppCompat = 2131034281;
+			// aapt resource value: 0x7f0500a7
+			public const int Base_DialogWindowTitle_AppCompat = 2131034279;
 			
-			// aapt resource value: 0x7f0500aa
-			public const int Base_DialogWindowTitleBackground_AppCompat = 2131034282;
+			// aapt resource value: 0x7f0500a8
+			public const int Base_DialogWindowTitleBackground_AppCompat = 2131034280;
 			
 			// aapt resource value: 0x7f050043
 			public const int Base_TextAppearance_AppCompat = 2131034179;
@@ -2991,8 +2991,8 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f050050
 			public const int Base_TextAppearance_AppCompat_Menu = 2131034192;
 			
-			// aapt resource value: 0x7f0500ab
-			public const int Base_TextAppearance_AppCompat_SearchResult = 2131034283;
+			// aapt resource value: 0x7f0500a9
+			public const int Base_TextAppearance_AppCompat_SearchResult = 2131034281;
 			
 			// aapt resource value: 0x7f050051
 			public const int Base_TextAppearance_AppCompat_SearchResult_Subtitle = 2131034193;
@@ -3042,11 +3042,11 @@ namespace HelloToolbar
 			// aapt resource value: 0x7f05005c
 			public const int Base_TextAppearance_AppCompat_Widget_Button = 2131034204;
 			
-			// aapt resource value: 0x7f05009f
-			public const int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131034271;
+			// aapt resource value: 0x7f0500aa
+			public const int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131034282;
 			
-			// aapt resource value: 0x7f0500a0
-			public const int Base_TextAppearance_AppCompat_Widget_Button_Colored = 2131034272;
+			// aapt resource value: 0x7f0500ab
+			public const int Base_TextAppearance_AppCompat_Widget_Button_Colored = 2131034283;
 			
 			// aapt resource value: 0x7f050099
 			public const int Base_TextAppearance_AppCompat_Widget_Button_Inverse = 2131034265;
